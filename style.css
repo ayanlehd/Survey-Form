@@ -1,0 +1,192 @@
+body {
+	font-family: 'Quicksand', arial, helvetica, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	background-color:  white;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.survey-form-header {
+  font-family: 'pacifico', helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #c6c7cc;
+  border: 1px solid #EAEDF0;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px 0;
+}
+
+ #survey-form {
+    background-color: #c6c7cc;
+    border: 1px solid #EAEDF0;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 40px 0;
+    padding: 50px 0;
+}
+
+
+.survey-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+    
+	margin-bottom: 15px;
+}
+.survey-row input[type="text"],
+            input[type="email"],
+             input[type="number"],
+             select,
+             textarea  {
+    margin: 0 50px 25px 50px;
+    padding: 5px 10px;
+    border: 3px solid #EAEDF0;
+    border-radius: 5px;
+
+ }
+
+.survey-row label {
+ 	padding-right: 173px;
+  margin-bottom: 15px;
+ }
+
+.survey-row .drop-label {
+  width: 260px;
+  padding-left: 36px;
+  margin-bottom: 25px;
+ }
+
+.survey-row select {
+ 	width: 170px;
+ 	padding: 5px;
+ 	font-size: 14px;
+  margin-bottom: 30px;
+ }
+
+ .legends {
+    width: 240px;
+    padding-left: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+ .radio,
+ .checkbox {
+    text-align: left;
+    padding-left: 7px;
+ }
+
+ .survey-row .text {
+    width: 240px;
+    padding-left: 47px;
+    margin-bottom: 20px;
+ }
+
+ .survey-row textarea {
+    width: 210px;
+    height: 60px;
+ }
+
+ .survey-row input[type="submit"] {
+    width: 100px;
+    font-size: 17px;
+    margin: 0 auto;
+    color: white;
+    padding: 8px;
+    background-color: #d46d6e;
+    border: 3px solid #d46d6e;
+    border-radius: 5px;
+ }
+
+@media only screen and (min-width: 700px) {
+   #survey-form,
+   .survey-form-header {
+   	  width: 800px;
+   }
+
+   .survey-row {
+   		flex-direction: row;
+   		align-items: flex-start;
+   		margin-bottom: 20px;
+
+   }
+
+   .survey-row input[type="text"],
+                input[type="email"],
+             input[type="number"],
+             select,
+             textarea {
+        width: 260px;
+        height: initial;
+    }
+
+    .survey-row label {
+    	text-align: right;
+    	width: 250px;
+    	padding-right: 5px;
+    	margin-top: 7px;
+    }
+
+    .survey-row .drop-label{
+      padding-left: 7px;
+      width: 240px;
+    }
+
+    .survey-row select {
+    	margin-top: 7px;
+    }
+    
+
+    .legends {
+      width: 240px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+      padding-left: 10px;
+      padding-top: 3px;
+    }
+
+    .survey-check,
+    .survey-radio {
+      width: 240px;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      margin-bottom: 10px;
+    }
+
+    .checkbox,
+    .radio {
+      display: block;
+      width: 240px;
+      position: relative;
+      left: -2px;
+      bottom: 5px;
+      padding-bottom: 5px;
+      
+    }
+
+    .survey-check input [type="checkbox"],
+    .survey-radio input [type="radio"] {
+      float: left;
+    }
+
+    .survey-row .text {
+      width: 240px;
+      padding-left: 7px;
+    }
+
+    .survey-row textarea {
+      margin-top: 7px;
+    }
+   
+   .survey-row input[type="submit"] {
+      margin-right: 50%;
+   }
